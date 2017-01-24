@@ -1,0 +1,299 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	color: #000;
+	background: #fff;
+	font: 14px/1 'Montserrat', sans-serif;
+}
+/* General reset */
+h1,h2,h3,h4,h5,h6,p{
+	margin: 0;
+}
+img {
+	border: none;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+	list-style: none;
+	padding: 0;
+}
+/* General settings */
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+.inner-block::before, .link a::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: -4px;	
+}
+/* HEADER START */
+.header{
+	height: 100px;
+	background: #373c3f;
+	text-transform: uppercase;
+}
+.logo{
+	float: left;
+	margin: 40px 24px 0 54px;
+	font-weight: bold;
+	font-size: 15px;
+	line-height: 26px;
+}
+.logo a {
+	color: #fff;
+}
+.logo a:hover {
+	color: #19b4c6;
+}
+.header-nav{
+	float: left;
+	margin-top: 40px;	
+}
+.header-nav li {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 26px;
+}
+.header-nav li + li{
+	margin-left: 20px;
+}
+.header-nav li a{
+	color: #fff;
+}
+.header-nav li a:hover{
+	color: #19b4c6;
+}
+.slicknav_menu{
+	display: none; 
+}
+/* HEADER END */
+
+/* MAIN START */
+.inner-block{
+	height: 580px;
+	background: #19b4c6;
+	background: linear-gradient(to bottom, #19b4c6, #0ca2b8);
+}
+.inner-block::before{
+    min-height: 580px;
+}
+.inner-text {
+    display: inline-block;
+    width: 700px;
+    vertical-align: middle;
+    margin-left: 78px;
+}
+.inner-text h2{
+	font-size: 60px;
+	line-height: 65px;
+	color: #fff;
+	margin-bottom: 50px;
+}
+.inner-text a {
+	font-size: 34px;
+	line-height: 65px;
+	color: #fff;
+	opacity: .5;
+}
+.inner-text a::after{
+	content: '>';
+	float: right;
+	font-family: 'Quicksand', sans-serif;
+}
+.img-row{
+	overflow: hidden;
+}
+.img-block {
+	float: left;
+	line-height: 0;
+}
+.img-block img {
+	width: 100%;
+}
+.img-block.w70 {
+	width: 70%;
+}
+.img-block.w30{
+	width: 33.3333%;
+}
+.link {
+	float: left;
+	width: 30%;
+	height: 221px;
+	background: #bc3184;
+	text-align: center;
+}
+.link a{
+	color: #fff;
+	font-family: 'Quicksand', sans-serif;
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 60px;
+}
+.link a::before{
+    min-height: 221px;
+}
+.content-text{
+	background: #ebebeb;
+	padding: 55px 26px 175px 80px;
+}
+.content-text h1 {	
+	margin-bottom: 30px;
+}
+.content-text h1 a{
+	font-size: 30px;
+	line-height: 44px;
+	color: #088ca5;
+}
+.content-text p{
+	line-height: 26px;
+	width: 49%;
+	display: inline-block;
+	padding-right: 50px;
+	margin-bottom: 45px;
+}
+/* MAIN END */
+
+/* MEDIA START */
+@media (max-width: 1059px){
+	.container{
+		width: 750px;
+	}
+	.inner-text {
+	    width: 640px;
+	}	
+	.link{
+		height: 162px;
+	}
+	.link a::before{
+    	min-height: 162px;
+	}
+}
+
+@media (max-width: 767px){
+	.container{
+		width: 620px;
+	}
+	.link{
+		height: 130px;
+	}
+	.link a::before{
+    	min-height: 130px;
+	}
+	.inner-block{
+		height: 348px;
+	}
+	.inner-block::before{
+	    min-height: 348px;
+	}
+	.inner-text{
+		width: 490px;
+	}
+	.inner-text h2{
+		font-size: 40px;
+		line-height: 60px;
+		color: #fff;
+		margin-bottom: 30px;
+	}
+	.inner-text a {
+		font-size: 28px;
+   		line-height: 40px;
+	}
+	.img-block.smw100{
+		width: 100%;
+	}
+	.slicknav_menu{
+		display: block;
+		float: right;
+	}
+	.header-nav{
+		display: none;
+	}
+	.content-text {
+		padding: 70px;
+	}
+	.content-text p {
+		width: 100%;
+		padding-right: 0;
+	}
+
+}
+@media (max-width: 657px){
+	.logo {
+		margin: 40px 0 0 27px;
+	}
+	.container{
+		width: 100%;
+	}	 
+	.link {
+	    height: 105px;
+	}
+	.inner-text a {
+	    font-size: 22px;
+	    line-height: 25px;
+	}
+	.link a::before{
+    	min-height: 105px;
+	}	
+	.inner-text {
+	    width: 90%;
+	    margin-left: 26px;
+	}
+}
+
+@media (max-width: 340px){
+	.header{
+		height: 55px;
+	}
+	.slicknav_menu {
+		font-size: 18px;
+	}
+	.slicknav_nav {
+		top: 55px;
+	}
+	.logo {
+		margin: 14px 0 0 11px;
+	}
+	.inner-text {
+	    width: 230px;
+	}	
+	.inner-text h2 {
+	    font-size: 28px;
+	    line-height: 40px;
+	    margin-bottom: 15px;
+	}
+	.inner-text a {
+	    font-size: 18px;
+	    line-height: 20px;
+	}
+	.content-text {
+	    padding: 34px 35px 50px 35px;
+	}
+	.content-text p {
+		padding-right: 10px;
+	}
+	.link {
+	    height: 60px;
+	}
+	.link a {
+		font-size: 35px;
+	}
+	.link a::before {
+	    min-height: 60px;
+	}
+}
+/* MEDIA END */
